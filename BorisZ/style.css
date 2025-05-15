@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:Arial, sans-serif;
+}
+
+header {
+    background-color: #d3d3d3;
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 2em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+main {
+    padding: 3rem;
+    text-align: center;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    gap: 5em;
+}
+
+.section-text {
+    background-image: url(https://www.wallart.com/media/catalog/product/cache/871f459736130e239a3f5e6472128962/f/o/fotobehang-met-een-tropische-jungle_9.jpg);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10em;
+}
+
+.section-text h2 {
+    font-size: 6em;
+    margin-bottom: 1em;
+    color:#ffffff;
+}
+
+.section-text p {
+    font-size: 3em;
+    color: #ffffff;
+}
+td{
+    padding: 4em, 4em, 4em;
+}
+img{
+    max-width: 20em;
+    max-height: 20em;
+    min-height: 20%;
+    min-width: 20%;
+}
+table{
+    display: flex;
+    justify-content: center;
+    gap: 5em;
+}
