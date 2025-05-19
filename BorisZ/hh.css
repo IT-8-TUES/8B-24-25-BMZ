@@ -53,11 +53,12 @@ nav ul li a:hover {
 }
 
 .clickable-image {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
     overflow: hidden;
-    width: 300px; /* Задай желаната ширина */
+    width: 35em;
+    height: 35em;
+    margin: 5em;
+    flex-direction: row;
 }
 
 .clickable-image a {
@@ -67,8 +68,12 @@ nav ul li a:hover {
 }
 
 .clickable-image img {
-    width: 100%;
-    height: auto;
+    box-shadow:0.3em 0.5em 0.5em rgb(58, 57, 57);
+    border-radius: 2em;
+    width: 30em;
+    height: 30em;
+    display: flex;
+    justify-content: center;
     display: block;
 }
 
