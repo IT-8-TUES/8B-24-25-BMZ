@@ -1,17 +1,41 @@
 body {
-    font-family: sans-serif;
+    font-family: "Inter", sans-serif;
     margin: 0;
-    background-color: lightblue;
+    background-color: whitesmoke;
     color: #000000;
     font-size: 16px;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+
 header {
-    background-color: rgb(159, 233, 176);
-    padding: 0.9375em;
+    background-color: #a0d2eb;
+    padding: 1em;
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Разпределяне на пространството между елементите в header-а */
+    justify-content: space-between; 
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .menu-icon {
@@ -44,7 +68,7 @@ nav ul {
 
 nav ul li {
     margin-left: 1.25em;
-    position: relative; /* За позициониране на падащото меню */
+    position: relative;
 }
 
 nav ul li a {
@@ -71,12 +95,12 @@ nav ul li a:hover {
     border-top: none;
     min-width: 10em;
     box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.1);
-    z-index: 10; /* Гарантира, че е над други елементи */
-    display: none; /* Скрива менюто по подразбиране */
+    z-index: 10;
+    display: none;
 }
 
 .dropdown:hover .dropdown-menu {
-    display: block; /* Показва менюто при hover на родителския li елемент */
+    display: block;
 }
 
 .dropdown-menu li a {
@@ -90,7 +114,11 @@ nav ul li a:hover {
 }
 
 main {
+    flex-grow: 1;
+    width: 100%;
+    max-width: 114rem;
     padding: 1.25em;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -102,48 +130,78 @@ main h2 {
     color: #777;
 }
 
-.cards-container {
-    display: flex;
-    gap: 1.25em;
+.grid {
+  display: grid;
+  width: 114rem;
+  grid-gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
 }
-
-.card {
-    background-color: #ddd;
-    border-radius: 0.3125em;
-    overflow: hidden;
-    box-shadow: 0.125em 0.125em 0.3125em rgba(0, 0, 0, 0.1);
-    width: 17.5em;
-    height: 17.5em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+@media (max-width: 60em) {
+  .grid {
+    grid-gap: 3rem;
+  }
 }
-
-.card a {
-    display: block;
-    width: 100%;
-    height: 100%;
-    text-decoration: none;
-    color: inherit;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.grid .card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 0.4rem;
+  overflow: hidden;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 0.2s;
 }
-
-.card img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: cover;
-    margin-bottom: 1em;
+.grid .card:hover {
+  transform: translateY(-0.5%);
+  box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.2);
 }
-
-.card-text {
-    font-size: 0.9em;
-    color: #555;
-    margin: 0;
+.grid .card__img {
+  display: block;
+  width: 100%;
+  height: 18rem;
+  object-fit: cover;
+}
+.grid .card__content {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-row-gap: 2rem;
+  padding: 2rem;
+  height: 100%;
+}
+.grid .card__header {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #0d0d0d;
+}
+.grid .card__text {
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.7;
+  color: #3d3d3d;
+  margin-bottom: 2.5rem;
+}
+.grid .card__btn {
+  display: block;
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 2rem;
+  text-align: center;
+  color: #3363ff;
+  background-color: #e6ecff;
+  border: none;
+  border-radius: 0.4rem;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.grid .card__btn span {
+  margin-left: 1rem;
+  transition: 0.2s;
+}
+.grid .card__btn:hover, .grid .card__btn:active {
+  background-color: #dce4ff;
+}
+.grid .card__btn:hover span, .grid .card__btn:active span {
+  margin-left: 1.5rem;
 }
 
 footer {
@@ -152,9 +210,8 @@ footer {
     font-size: 0.8em;
     padding: 1em;
     text-align: center;
-    position: fixed;
-    bottom: 0;
     width: 100%;
+    box-sizing: border-box;
 }
 
 .footer-content {
