@@ -2,8 +2,8 @@ body {
     font-family: "Inter", sans-serif;
     margin: 0;
     background-color: whitesmoke;
-    color: #000000;
-    font-size: 16px;
+    color: #ffffff;
+    font-size: 2em;
 
     display: flex;
     flex-direction: column;
@@ -13,7 +13,6 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
-
 *,
 *::before,
 *::after {
@@ -29,7 +28,7 @@ html {
 
 
 header {
-    background-color: #a0d2eb;
+    background-color: #8458B3;
     padding: 1em;
     display: flex;
     align-items: center;
@@ -47,16 +46,10 @@ header {
     margin-right: 1.25em;
     cursor: pointer;
 }
-
-.menu-icon div {
-    width: 100%;
-    height: 0.1875em;
-    background-color: #333;
-}
-
 header h1 {
     margin: 0;
     font-size: 1.5em;
+    align-items: flex-start;
 }
 
 nav ul {
@@ -79,55 +72,25 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #ddd;
-    color: #000;
+    background-color: #9df9ef;
+    color: #ffffff;
 }
-
-.dropdown-menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #f9f9f9;
-    border: 1px solid #ccc;
-    border-top: none;
-    min-width: 10em;
-    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.1);
-    z-index: 10;
-    display: none;
-}
-
-.dropdown:hover .dropdown-menu {
-    display: block;
-}
-
-.dropdown-menu li a {
-    padding: 0.5em 1em;
-    display: block;
-    text-align: left;
-}
-
-.dropdown-menu li a:hover {
-    background-color: #eee;
-}
-
 main {
     flex-grow: 1;
     width: 100%;
-    max-width: 114rem;
     padding: 1.25em;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #d0bdf4;
 }
 
 main h2 {
     margin-bottom: 1.25em;
     font-size: 1.2em;
-    color: #777;
+    color: #000000; 
+    padding: 2em;
 }
 
 .grid {
@@ -136,7 +99,7 @@ main h2 {
   grid-gap: 3rem;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
 }
-@media (max-width: 60em) {
+(max-width: 60em) {
   .grid {
     grid-gap: 3rem;
   }
@@ -144,16 +107,12 @@ main h2 {
 .grid .card {
   display: flex;
   flex-direction: column;
-  background-color: #fff;
-  border-radius: 0.4rem;
+  background-color: #8458B3;
+  border-radius: 1rem;
   overflow: hidden;
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: 0.2s;
-}
-.grid .card:hover {
-  transform: translateY(-0.5%);
-  box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.2);
 }
 .grid .card__img {
   display: block;
@@ -177,7 +136,7 @@ main h2 {
   font-size: 1.5rem;
   letter-spacing: 0.1rem;
   line-height: 1.7;
-  color: #3d3d3d;
+  color: #000000;
   margin-bottom: 2.5rem;
 }
 .grid .card__btn {
@@ -187,7 +146,7 @@ main h2 {
   font-size: 2rem;
   text-align: center;
   color: #3363ff;
-  background-color: #e6ecff;
+  background-color: #6381e3;
   border: none;
   border-radius: 0.4rem;
   transition: 0.2s;
@@ -197,15 +156,8 @@ main h2 {
   margin-left: 1rem;
   transition: 0.2s;
 }
-.grid .card__btn:hover, .grid .card__btn:active {
-  background-color: #dce4ff;
-}
-.grid .card__btn:hover span, .grid .card__btn:active span {
-  margin-left: 1.5rem;
-}
-
 footer {
-    background-color: #e0e0e0;
+    background-color: #e978efb3;
     color: #777;
     font-size: 0.8em;
     padding: 1em;
