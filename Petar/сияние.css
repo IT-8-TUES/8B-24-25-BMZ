@@ -6,7 +6,7 @@ body {
     background-color: #f4f4f4; 
     color: #333;
 
-    background-image: url('https://cdn.sanity.io/images/np2gumla/production/2fbbd957b5ded7eb0f17b3c31da279f711102291-5000x3750.jpg?w=3840&h=2240&fit=crop&auto=format'); 
+    background-image: url('https://res.cloudinary.com/icelandtours/g_auto,f_auto,c_auto,w_3840,q_auto:good/northern_lights_above_glacier_lagoon_v2osk_unsplash_7d39ca647f.jpg'); 
     background-size: cover; 
     background-position: center center; 
     background-repeat: no-repeat; 
@@ -14,8 +14,8 @@ body {
 }
 
 header {
-    color: white;
-    background-color: darkslategrey;
+    color: rgb(4, 204, 4);
+    background-color: rgb(4, 0, 46);
     padding: 1em;
     display: flex;
     align-items: center;
@@ -26,8 +26,8 @@ header {
 }
 
 .back-button {
-    background-color: slategray; 
-    color: white;
+    background-color: rgb(4, 204, 4); 
+    color: rgb(4, 0, 46);
     border: none;
     padding: 0.8em 1.5em;
     cursor: pointer;
@@ -86,14 +86,14 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: white;
+    color: rgb(4, 204, 4);
     padding: 0.3125em 0.625em;
     display: block;
 }
 
 nav ul li a:hover {
-    background-color: slategrey;
-    color: #ffffff;
+    background-color: rgb(4, 204, 4);
+    color: rgb(4, 1, 46);
 }
 
 header h1 {
@@ -104,7 +104,7 @@ main {
     padding: 20px;
     max-width: 1200px;
     margin: 20px auto;
-    background: rgba(112, 128, 144, 0.514); 
+    background: rgba(4, 204, 4, 0.397); 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
 
@@ -131,7 +131,7 @@ main {
 }
 
 .content h2 {
-    color: darkslategray;
+    color: rgb(4, 1, 46) ;
     margin-top: 0;
 }
 
@@ -180,8 +180,8 @@ hr {
 }
 
 footer {
-    background-color: darkslategrey;
-    color: #ffffff;
+    background-color: rgb(4, 0, 46);
+    color: rgb(4, 204, 4);
     font-size: 0.8em;
     padding: 1em;
     text-align: center;
@@ -199,7 +199,7 @@ footer {
 }
 
 .footer-content a {
-    color: #ffffff;
+    color: rgb(4, 204, 4);
     text-decoration: none;
 }
 

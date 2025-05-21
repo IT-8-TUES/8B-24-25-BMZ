@@ -6,7 +6,7 @@ body {
     background-color: #f4f4f4; 
     color: #333;
 
-    background-image: url('https://cdn.sanity.io/images/np2gumla/production/2fbbd957b5ded7eb0f17b3c31da279f711102291-5000x3750.jpg?w=3840&h=2240&fit=crop&auto=format'); 
+    background-image: url('https://hips.hearstapps.com/hmg-prod/images/pulsed-electromagnetic-frequencies-tuned-to-the-royalty-free-image-1655133958.jpg'); 
     background-size: cover; 
     background-position: center center; 
     background-repeat: no-repeat; 
@@ -14,8 +14,8 @@ body {
 }
 
 header {
-    color: white;
-    background-color: darkslategrey;
+    color: #224422;
+    background-color: #F5F5DC;
     padding: 1em;
     display: flex;
     align-items: center;
@@ -26,8 +26,8 @@ header {
 }
 
 .back-button {
-    background-color: slategray; 
-    color: white;
+    background-color: #224422; 
+    color: #F5F5DC;
     border: none;
     padding: 0.8em 1.5em;
     cursor: pointer;
@@ -86,14 +86,14 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: white;
+    color: #224422;
     padding: 0.3125em 0.625em;
     display: block;
 }
 
 nav ul li a:hover {
-    background-color: slategrey;
-    color: #ffffff;
+    background-color: #224422;
+    color: #F5F5DC;
 }
 
 header h1 {
@@ -104,7 +104,7 @@ main {
     padding: 20px;
     max-width: 1200px;
     margin: 20px auto;
-    background: rgba(112, 128, 144, 0.514); 
+    background: rgba(245, 245, 220, 0.514) ; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
 
@@ -115,7 +115,7 @@ main {
     padding: 20px;
     border: 1px solid #eee;
     border-radius: 8px;
-    background-color: #f9f9f9; 
+    background-color: #F5F5DC; 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -130,8 +130,12 @@ main {
     padding: 0 20px;
 }
 
+.content p{
+    color: #666;
+}
+
 .content h2 {
-    color: darkslategray;
+    color: #224422 ;
     margin-top: 0;
 }
 
@@ -180,8 +184,8 @@ hr {
 }
 
 footer {
-    background-color: darkslategrey;
-    color: #ffffff;
+    background-color: #F5F5DC;
+    color: #224422;
     font-size: 0.8em;
     padding: 1em;
     text-align: center;
@@ -199,7 +203,7 @@ footer {
 }
 
 .footer-content a {
-    color: #ffffff;
+    color: #224422;
     text-decoration: none;
 }
 
