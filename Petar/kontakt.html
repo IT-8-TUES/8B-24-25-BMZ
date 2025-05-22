@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакти - Географска Енциклопедия</title>
+    <link rel="stylesheet" href="kontakt.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <button class="back-button"><a href="начална страница">Обратно</a></button>
+        <h1>Контакти - Географска енциклопедия</h1> 
+        <nav>
+            <ul>
+                <li><a href="#">За нас</a></li>
+                <li><a href="#">Източници</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-hero">
+            <h1>Свържете се с нас</h1>
+            <p>Имате въпроси, предложения или искате да докладвате грешка? Моля, използвайте формата по-долу или се свържете директно с нас.</p>
+        </section>
+
+        <section class="contact-form-section">
+            <div class="container">
+                <div class="form-wrapper">
+                    <h2>Изпратете ни съобщение</h2>
+                    <form action="#" method="POST" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Име:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Имейл:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Относно:</label>
+                            <input type="text" id="subject" name="subject">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Съобщение:</label>
+                            <textarea id="message" name="message" rows="7" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Изпрати</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h2>Други начини за връзка</h2>
+                    <ul>
+                        <li><strong>Имейл:</strong> <a href="mailto:info@geoportal.com">info@geoportal.com</a></li>
+                        <li><strong>Телефон:</strong> +359 892996007</li>
+                        <li><strong>Адрес:</strong> гр. София, ул. „Росарио“ 1</li>
+                    </ul>
+                    <div class="social-media">
+                        <h3>Последвайте ни:</h3>
+                        <ul>
+                            <li><a href="#" target="_blank">Facebook</a></li>
+                            <li><a href="#" target="_blank">Instagram</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Географска Енциклопедия. Всички права запазени.</p>
+        </div>
+    </footer>
+</body>
+</html>
