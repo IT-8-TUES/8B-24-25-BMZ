@@ -4,66 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Климат</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Подраздели.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap">
 </head>
 <body>
-    <header>  
-        <h1>Климат</h1>
+    <header> 
+         <button class="obraten"><a href="#">Обратно</a></button> 
+        <h1><a href="file:///C:/Users/GRIGS/Desktop/Manev/8B-24-25-BMZ/AManev/%D0%9F%D0%BE%D0%B4%D1%80%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%D0%B8.html">Климат</a></h1>
         
         <nav>
             <ul>
                 
                 <li><a href="#">За нас</a></li>
-                <li><a href="">Източници</a></li>
+                <li><a href="file:///C:/Users/GRIGS/Desktop/Manev/8B-24-25-BMZ/AManev/soursec.html">Източници</a></li>
                 <li><a href="#">Контакти</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <p><h2>Теми за разглеждане</h2></p>
-        <div class="grid">
+        <p><h2 class="temi">Теми за разглеждане</h2></p>
+        <div class="snimka">
             <div class="card">
                 <img class="card__img" src="https://elplanetatierra.com/wp-content/uploads/2020/02/atmosfera_terrestre.jpg" alt="Атмосфера">
                 <div class="card__content">
                     <h1 class="card__header">Атмосфера</h1>
-                    <button class="card__btn"><a href="www.google.com">Към раздел</a></button>
+                    <button class="card__btn"><a href="file:///C:/Users/GRIGS/Desktop/Manev/8B-24-25-BMZ/AManev/Atmosfera.html">Към раздел</a></button>
                 </div>
             </div>
             <div class="card">
                 <img class="card__img" src="https://www.theschoolrun.com/sites/theschoolrun.com/files/article_images/the_four_seasons.jpg" alt="Сезони">
                 <div class="card__content">
                     <h1 class="card__header">Сезони</h1>
-               <button class="card__btn"><a href="с">Към раздел</a></button>
+               <button class="card__btn"><a href="file:///C:/Users/GRIGS/Desktop/Manev/8B-24-25-BMZ/AManev/Sezoni.html">Към раздел</a></button>
                 </div>
             </div>
             <div class="card">
                 <img class="card__img" src="https://static.dir.bg/uploads/images/2020/06/10/2019780/768x432.jpg?_=1591771961" alt="Canyons">
                 <div class="card__content">
                     <h1 class="card__header">Бури и градушки</h1>
-                    <button class="card__btn"><a href="www.google.com">Към раздел</a></button>
+                    <button class="card__btn"><a href="file:///C:/Users/GRIGS/Desktop/Manev/8B-24-25-BMZ/AManev/%D0%91%D1%83%D1%80%D0%B8%20%D0%B8%20%D0%B3%D1%80%D0%B0%D0%B4%D1%83%D1%88%D0%BA%D0%B8.html">Към раздел</a></button>
                 </div>
             </div>
             <div class="card">
                 <img class="card__img" src="https://as2.ftcdn.net/v2/jpg/07/48/21/03/1000_F_748210397_seEZpJKf8G6jCRAeFjaccVSljerG2DxW.jpg" alt="Океани и континенти">
                 <div class="card__content">
                     <h1 class="card__header">Океани и континенти</h1>
-                    <button class="card__btn"><a href="www.google.com">Към раздел</a></button>
+                    <button class="card__btn"><a href="file:///C:/Users/GRIGS/Desktop/Manev/8B-24-25-BMZ/AManev/oceans.html">Към раздел</a></button>
                 </div>
             </div>
             <div class="card">
-                <img class="card__img" src="http://hdwpro.com/wp-content/uploads/2019/08/Beautiful-Tornado-Image.jpg" alt="Tornado">
+                <img class="card__img" src="https://cache2.24chasa.bg/Images/Cache/322/Image_19829322_40_0.jpg" alt="Облаци">
                 <div class="card__content">
-                    <h1 class="card__header">Торнадо</h1>
-                    <button class="card__btn"><a href="www.google.com">Към раздел</a></button>
+                    <h1 class="card__header">Облаци и мъгли</h1>
+                    <button class="card__btn"><a href="file:///C:/Users/GRIGS/Desktop/Manev/8B-24-25-BMZ/AManev/Clouds.html">Към раздел</a></button>
                 </div>
             </div>
             <div class="card">
                 <img class="card__img" src="http://2.bp.blogspot.com/-gCYogzCtMkc/U6qodblxCgI/AAAAAAAAAZs/B2cdfCOOGyc/s1600/Zlatograd_photo.jpg" alt="Видове климат">
                 <div class="card__content">
                     <h1 class="card__header">Видове климат</h1>
-                    <button class="card__btn"><a href="www.google.com">Виж раздел</a></button>
+                    <button class="card__btn"><a href="file:///C:/Users/GRIGS/Desktop/Manev/8B-24-25-BMZ/AManev/vidove.html">Виж раздел</a></button>
                 </div>
             </div>
 
@@ -80,6 +81,26 @@
             </div>
         </div>
     </footer>
+<script>
+    // Дефиниция на функцията goBack
+    function goBack() {
+        window.history.back();
+    }
+
+    document.querySelectorAll('.card').forEach(card => {
+        card.addEventListener('mouseover', () => {
+            card.classList.add('hovered');
+        });
+        card.addEventListener('mouseout', () => {
+            card.classList.remove('hovered');
+        });
+    });
+
+    // Можеш да извикаш goBack() функцията, когато е необходимо,
+    // например при кликване върху някой елемент:
+    // document.getElementById('myBackButton').addEventListener('click', goBack);
+</script>
+    <script src="atmos.js"></script>
 
 </body>
 </html>
