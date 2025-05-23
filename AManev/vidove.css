@@ -1,18 +1,6 @@
-
-body {
-    font-family: "Inter", sans-serif;
-    margin: 0;
-    background-color: #1a1a2e;
-    color: #ffffff;
-    font-size: 2em;         
-
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 0;
+html {
     box-sizing: border-box;
+    font-size: 62.5%;
 }
 
 *,
@@ -22,49 +10,70 @@ body {
     padding: 0;
     box-sizing: inherit;
 }
-html {  
+
+body {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+        background-image: url("https://cdn.wallpapersafari.com/43/43/lr9HLZ.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+    color: #ffffff;
+    font-size: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
     box-sizing: border-box;
-    font-size: 62.5%; /* This makes 1rem = 10px, so 2em in body will be 20px if not overridden */
+    opacity: 0.9;
+}
+
+a {
+    text-decoration: none;
+    color: #f5f8fa;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #b9cede;
 }
 
 .obraten {
-    background-color: rgb(99, 89, 228); 
-    color: #db90e5;
+    background-color: #d5cc6bc9;
+    color: #ffffff;
     border: none;
-    padding: 0.8em 1.5em;
+    padding: 1rem 2rem;
     cursor: pointer;
-    border-radius: 0.4rem;
-    font-size: 1em;
-    z-index: 10; 
+    border-radius: 0.5rem;
+    font-size: 1.6rem;
+}
+
+.obraten:hover {
+    background-color: #f7f7f7;
 }
 
 header {
-    background-color: #8458b3df;
-    padding: 1em;
+    background-color: #ded16cc1;
+    padding: 1.5rem;
     display: flex;
-    align-items: center;
-    justify-content: space-between; 
+    align-items: center;  
+    justify-content: space-between;
     width: 100%;
     box-sizing: border-box;
-    position: sticky; /* Make header sticky */
+    position: static;
     top: 0;
-    z-index: 100;
-}
-
-.menu-icon {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 1.875em;
-    height: 1.25em;
-    margin-right: 1.25em;
-    cursor: pointer;
 }
 
 header h1 {
-    margin: 0;
-    font-size: 1.5em;
-    align-items: flex-start;
+  margin: 0;
+  font-size: 1.5em;
+  align-items: flex-start;
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
 }
 
 nav ul {
@@ -75,227 +84,122 @@ nav ul {
 }
 
 nav ul li {
-    margin-left: 1.25em;
+    margin-left: 2rem;
     position: relative;
 }
 
 nav ul li a {
     text-decoration: none;
     color: inherit;
-    padding: 0.3125em 0.625em;
+    padding: 1rem 1.5rem;
     display: block;
+    border-radius: 0.4rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 1.6rem;
 }
 
 nav ul li a:hover {
-    background-color: #6381e3;
-    color: #ffffff;
+    background-color: #f2f2f3;
+    color: #de0d0d;
 }
 
-a { 
-    text-decoration: none;
-    color:#d0bdf4;
-}
 main {
-    max-width: 1200px; /* Увеличена максимална ширина */
+    max-width: 1200px;
     width: 100%;
-    padding: 2em;
+    padding: 2rem;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.content-block {
-    background-color: #2a2a4a; /* Тъмен фон за блоковете, като "Сезони" */
-    border-radius: 1rem; /* Заоблени ъгли */
-    padding: 2.5em;
-    margin-bottom: 2.5em; /* Разстояние между блоковете */
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* По-изразена сянка */
+section {
     width: 100%;
-    box-sizing: border-box;
+    margin-bottom: 3rem;
+    background-color: #9d904678;
+    padding: 3rem;
+    border-radius: 1rem;
 }
 
-.content-block h2 {
-    font-size: 2.4em;
-    color: #a084e8; /* Светло лилаво за заглавията */
-    margin-bottom: 1em;
+h2,h3,h4 {
+    color: #d9e588;
+    margin-bottom: 1.5rem;
     text-align: center;
+    font-weight: 700;
 }
-
-.content-block p {
-    font-size: 1.1em;
-    color: #cccccc; /* По-светъл сив текст */
-    text-align: justify;
-    margin-bottom: 1em;
-}
-
-.climate-types-section h2 {
-    font-size: 2.8em;
-    border-bottom: 2px solid #5c478a; /* Линия под заглавието */
-    padding-bottom: 0.3em;
-    margin-bottom: 1.5em;
-    text-align: left; /* Заглавието наляво */
-}
-
-.climate-types-section .intro-text {
-    margin-bottom: 2.5em;
-    font-size: 1.2em;
-}
-
 
 .climate-grid {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Две колони */
-    gap: 3em 4em; /* Разстояние между редове и колони */
-    margin-top: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    margin-top: 2rem;
 }
 
 .climate-location {
     display: flex;
     flex-direction: column;
-    background-color: #35355a; /* По-светъл тон за вътрешните блокове */
-    padding: 1.8em;
+    background-color: #e3f2fd;
+    padding: 2rem;
     border-radius: 0.8rem;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #90caf9;
 }
 
 .location-header {
-    margin-bottom: 0.8em;
+    margin-bottom: 1.5rem;
+    text-align: center;
 }
 
 .location-header h3 {
-    font-size: 1.8em;
-    color: #d8caff; /* Светло лилаво за подзаглавията */
-    margin-bottom: 0.2em;
+    font-size: 2.2rem;
+    color: #0277bd;
+    margin-bottom: 0.5rem;
 }
 
 .location-type {
     font-style: italic;
-    font-size: 0.9em;
-    color: #aaaaaa;
-    margin-bottom: 1em;
+    font-size: 1.5rem;
+    color: #424242;
 }
 
 .location-details p {
-    font-size: 1em;
-    margin-bottom: 0.5em;
-    color: #cccccc;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    color: #555555;
+}
+
+.location-details p strong {
+    color: #212121;
 }
 
 .location-image {
     width: 100%;
-    height: auto;
-    border-radius: 0.5rem;
-    margin-top: 1.5em;
-    margin-bottom: 1em;
+    height: 200px;
+    border-radius: 0.8rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
     object-fit: cover;
-    display: block; /* Премахва допълнителното отстояние под изображението */
-}
-
-.small-image {
-    max-height: 150px;
-}
-
-.large-image {
-    max-height: 250px;
+    display: block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .image-caption {
-    font-size: 0.9em;
-    color: #bbbbbb;
+    font-size: 1.4rem;
+    color: #616161;
     text-align: justify;
-    margin-top: 0.5em;
+    margin-top: 1rem;
+    line-height: 1.5;
 }
-
-/* Footer Styles */
 footer {
-    width: 100%;
-    padding: 1em 2em;
-    background-color: #3b2a59; /* Същият фон като хедъра */
-    color: #ffffff;
-    text-align: center;
-    margin-top: 3em;
-    box-sizing: border-box;
-    box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
-}
-
-.page-number {
-    font-size: 0.9em;
-    margin: 0;
-}
-
-/* Секция "Твоят климат" */
-.climate-finder-section h2 {
-    font-size: 2.4em;
-    text-align: center;
-}
-
-.climate-finder-section p {
-    text-align: center;
-    margin-bottom: 1.5em;
-}
-
-.form-group {
-    margin-bottom: 1em;
-    width: 100%;
-    max-width: 400px; /* Ограничава ширината на формата */
-    text-align: left;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 0.5em;
-    font-size: 1.1em;
-    color: #d8caff;
-}
-
-.form-group input[type="number"] {
-    width: calc(100% - 20px); /* Отчита padding-а */
-    padding: 0.8em 1em;
-    border: 1px solid #5c478a;
-    border-radius: 0.4rem;
-    background-color: #4a4a7a;
-    color: #ffffff;
-    font-size: 1em;
-    box-sizing: border-box;
-}
-
-.form-group input[type="number"]::placeholder {
-    color: #aaaaaa;
-}
-
-.climate-finder-section button {
-    background-color: #a084e8; /* Светло лилаво за бутона */
-    color: #ffffff;
-    border: none;
-    padding: 1em 2em;
-    cursor: pointer;
-    border-radius: 0.4rem;
-    font-size: 1.2em;
-    margin-top: 1.5em;
-    transition: background-color 0.3s ease;
-}
-
-.climate-finder-section button:hover {
-    background-color: #be9bff; /* По-светло при hover */
-}
-
-#climateResult {
-    margin-top: 2em;
-    font-size: 1.4em;
-    font-weight: bold;
-    color: #d8caff;
-    text-align: center;
-}
-footer {  
-    background-color: #bb9df4;
-    color: #777;
-    font-size: 0.8em;
-    padding: 1em;
+    background-color: #bfb869;
+    color: #e0f2f7;
+    font-size: 1.4rem;
+    padding: 1.5rem;
     text-align: center;
     width: 100%;
     box-sizing: border-box;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
 }
 
 .footer-content {
@@ -304,11 +208,11 @@ footer {
 }
 
 .footer-content p {
-    margin-bottom: 0.5em;
+    margin-bottom: 0.8rem;
 }
 
 .footer-content a {
-    color: #337ab7;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -317,93 +221,97 @@ footer {
 }
 
 .social-links {
-    margin-top: 0.5em;
+    margin-top: 1rem;
 }
 
+.social-links a {
+    margin: 0 1rem;
+    color: #e0f2f7;
+}
 
-/* Отзивчивост за по-малки екрани */
+/* Responsive adjustments */
 @media (max-width: 992px) {
     .climate-grid {
-        grid-template-columns: 1fr; /* Една колона на средни екрани */
-        gap: 2.5em;
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
     }
 }
 
 @media (max-width: 768px) {
+    body {
+        font-size: 1.6rem;
+    }
+    main {
+        width: 95%;
+        padding: 2rem 0;
+    }
+
     header {
         flex-direction: column;
-        text-align: center;
-        padding: 1em;
+        align-items: flex-start;
+        padding: 1.5rem;
     }
 
     header h1 {
-        margin-bottom: 0.5em;
+        position: static;
+        transform: none;
+        margin-top: 1rem;
+        text-align: center;
+        width: 100%;
+        font-size: 2rem;
     }
 
     nav ul {
         flex-direction: column;
         align-items: center;
-        margin-top: 1em;
+        width: 100%;
+        margin-top: 1.5rem;
     }
 
     nav ul li {
-        margin: 0.5em 0;
+        margin: 0.8rem 0;
     }
 
     .obraten {
-        margin-bottom: 1em;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1.4rem;
+        padding: 0.8rem 1.5rem;
     }
 
-    main {
-        padding: 1em;
+    section {
+        padding: 2rem;
     }
 
-    .content-block {
-        padding: 1.5em;
-        margin-bottom: 2em;
-    }
-
-    .climate-types-section h2, .content-block h2 {
-        font-size: 2em;
+    .location-image {
+        height: 180px;
     }
 }
 
 @media (max-width: 480px) {
     body {
-        font-size: 1.4em;
+        font-size: 1.4rem;
     }
 
     header h1 {
-        font-size: 1.8em;
+        font-size: 1.8rem;
     }
 
-    .content-block h2 {
-        font-size: 1.8em;
+    section h2 {
+        font-size: 2rem;
     }
 
-    .climate-intro .intro-text {
-        font-size: 1em;
+    .climate-location h3 {
+        font-size: 1.8rem;
     }
 
-    .location-header h3 {
-        font-size: 1.5em;
+    .location-details p,
+    .image-caption {
+        font-size: 1.4rem;
     }
 
-    .location-details p, .image-caption {
-        font-size: 0.9em;
-    }
-
-    .form-group input[type="number"] {
-        padding: 0.6em 0.8em;
-        font-size: 0.9em;
-    }
-
-    .climate-finder-section button {
-        padding: 0.8em 1.5em;
-        font-size: 1em;
-    }
-
-    #climateResult {
-        font-size: 1.2em;
+    .location-image {
+        height: 150px;
     }
 }

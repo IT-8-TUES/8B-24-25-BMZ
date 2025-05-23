@@ -1,104 +1,231 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="bg">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Атмосферата</title>
-    <link rel="stylesheet" href="cssatmos.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Атмосферата</title>
+  <link rel="stylesheet" href="cssatmos.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
-    <header> 
-        <button class="obraten" onclick="goBack()"><a href="#">Обратно</a></button> 
-       <h1><a href="file:///C:/Users/GRIGS/Desktop/Manev/8B-24-25-BMZ/AManev/%D0%9F%D0%BE%D0%B4%D1%80%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%D0%B8.html">Климат</a></h1>
-        
-        <nav>
-            <ul>
-                <li><a href="#">За нас</a></li>
-                <li><a href="#sources">Източници</a></li>
-                <li><a href="#">Контакти</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <button class="obraten" onclick="goBack()">Обратно</button>
+    <h1><a href="Подраздели.html">Климат</a></h1>
+    <nav>
+      <ul>
+        <li><a href="#">За нас</a></li>
+        <li><a href="soursec.html">Източници</a></li>
+        <li><a href="../Petar/kontakt.html">Контакти</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
-        <section id="atmosphere-intro">
-            <h2>Атмосфера</h2>
-            <p>Земята е покрита с тънък слой въздух, наречен "атмосфера". Той действа като филтър през деня и ни защитава от ултравиолетови лъчи и поддържа постоянна температура. Без атмосфера животът на Земята би бил невъзможен.</p>
-        </section>
+  <main>
+    <section id="atmosphere-intro">
+      <h2>Атмосфера</h2>
+      <p>Земята е покрита с тънък слой въздух, наречен "атмосфера". Той действа като филтър през деня и ни защитава от
+        ултравиолетови лъчи и поддържа постоянна температура. Без атмосфера животът на Земята би бил невъзможен.</p>
+    </section>
 
-        <section id="layers">
-            <h3>ВЪЗДУШНИ ПЛАСТОВЕ</h3>
-            <p>От повърхността на Земята до Космоса, атмосферата е разделена на слоеве. Те се различават по температура, налягане и състав. Всеки слой играе важна роля в климата и времето на планетата.</p>
+    <section id="layers">
+      <h3>ВЪЗДУШНИ ПЛАСТОВЕ</h3>
+      <p>От повърхността на Земята до Космоса, атмосферата е разделена на слоеве. Те се различават по температура,
+        налягане и състав. Всеки слой играе важна роля в климата и времето на планетата.</p>
 
-            <div class="layer-info">
-                <h4>Тропосфера</h4>
-                <p>Най-ниският слой на атмосферата, простиращ се до около 8-15 км височина. Тук се формират повечето метеорологични явления.</p>
-            </div>
-            <div class="layer-info">
-                <h4>Стратосфера</h4>
-                <p>Намира се над тропосферата, до около 50 км височина. Съдържа озоновия слой, който абсорбира вредното ултравиолетово лъчение от Слънцето.</p>
-            </div>
-            <div class="layer-info">
-                <h4>Мезосфера</h4>
-                <p>Слой между 50 и 85 км височина. Температурите намаляват значително с нарастване на височината.</p>
-            </div>
-            <div class="layer-info">
-                <h4>Термосфера</h4>
-                <p>Простира се от около 85 км до 600 км. Температурите могат да достигнат много високи стойности поради абсорбцията на слънчева радиация.</p>
-            </div>
-             <div class="layer-info">
-                <h4>Екзосфера</h4>
-                <p>Най-външният слой на атмосферата, където атмосферата постепенно преминава в космическото пространство.</p>
-            </div>
-        </section>
-
-        <section id="atmospheric-gases">
-            <h3>ГАЗОВЕ В АТМОСФЕРАТА</h3>
-            <p>Атмосферата представлява смес от газове. Основните компоненти са азот (около 78%) и кислород (около 21%). Останалата част се състои от аргон, въглероден диоксид, неонов и хелий, както и следи от други газове и водни пари.</p>
-            <div class="gas-info">
-                <h4>Жизненоважен кислород</h4>
-                <p>Кислородът е жизненоважен за дишането на повечето живи организми. Растенията произвеждат кислород чрез фотосинтеза.</p>
-            </div>
-        </section>
-
-        <section id="phenomena">
-            <h3>ОГЪН В НЕБЕТО</h3>
-            <p>Метеорите, известни като "падащи звезди", изгарят при навлизане в атмосферата на Земята поради триенето с въздуха. Това създава светлинно шоу, което може да се наблюдава от Земята.</p>
-            <div class="phenomena-img">
-                <img src="https://theplanets.org/123/2021/05/meteor-showers.png" alt="Метеор в атмосферата">
-                <p class="image-caption">Метеор, изгарящ в земната атмосфера.</p>
-            </div>
-        </section>
-
-        <section id="climate-cover">
-            <h3>ПОКРИВЪТ НА КЛИМАТА</h3>
-            <p>Климатът на Земята се формира от взаимодействието между атмосферата, океаните, сушата, ледовете и живите организми. Атмосферата действа като топлоизолиращо покритие, което задържа топлината и предпазва планетата от екстремни температурни промени. Парниковият ефект, предизвикан от газове като въглероден диоксид, е естествен процес, който поддържа Земята достатъчно топла за живот.</p>
-            <div class="climate-img">
-                <img src="https://www.metoffice.gov.uk/binaries/content/gallery/metofficegovuk/hero-images/weather/cloud/altocumulus.jpg" alt="Облаци и климат">
-                <p class="image-caption">Облаци, играещи важна роля в климата.</p>
-            </div>
-        </section>
-
-        <section id="sources">
-            <h3>Източници</h3>
-            <ul>
-                <li>Страница 124/раздел Климат/подраздел Атмосфера/ от Енциклопедия по география (повече информация в раздел Източници.</li>
-                <li>Изображенията са илюстративни и заснети от различни източници, показващи атмосферата и свързани феномени.</li>
-            </ul>
-        </section>
-    </main>
-       <footer>
-        <div class="footer-content">
-            <p>Имейл: <a href="klimatsofiaTUES@gmail.com">klimatsofiaTUES@gmail.com</a></p>
-            <p>Телефон: +359 2 921 21 00 </p>
-            <p>&copy; 2025 Всички права запазени</p>
-            <div class="social-links">
-                <a href="https://www.facebook.com/profile.php?id=61573819538073" target="_blank">Facebook</a> | <a href="https://x.com/thebravoman/status/1321863967837425664" target="_blank">Twitter</a>
-            </div>
+      <div class="layer-item">
+        <h4 class="layer-header">Тропосфера (click me) <span class="toggle-icon fas fa-chevron-down"></span></h4>
+        <div class="layer-content">
+          <p>Най-ниският слой на атмосферата, простиращ се до около 8-15 км височина. Тук се формират повечето
+            метеорологични явления.</p>
+          <div class="details hidden">
+            <p>
+              <i class="tropos1"></i> **Метеорологични явления:** Всички облаци, дъжд, сняг, гръмотевични бури и вятър
+              се случват в тропосферата.
+            </p>
+            <p>
+              <i class="tropos2"></i> **Температура:** Температурата намалява с увеличаване на височината, средно с
+              около 6.5°C на километър.
+            </p>
+            <p>
+              <i class="tropos3"></i> **Полети:** Повечето пътнически самолети летят в горната част на тропосферата или
+              в долната част на стратосферата, за да избегнат турбуленции.
+            </p>
+          </div>
         </div>
-    </footer>
+      </div>
 
-    <script src="atmos.js"></script>
+      <div class="layer-item">
+        <h4 class="layer-header">Стратосфера (click me) <span class="toggle-icon fas fa-chevron-down"></span></h4>
+        <div class="layer-content">
+          <p>Намира се над тропосферата, до около 50 км височина. Съдържа озоновия слой, който абсорбира вредното
+            ултравиолетово лъчение от Слънцето.</p>
+          <div class="details hidden">
+            <p>
+              <i class="stratos1"></i> **Озонов слой:** Озоновият слой предпазва живота на Земята от вредните
+              ултравиолетови лъчи. Без него, слънчевата радиация би била смъртоносна.
+            </p>
+            <p>
+              <i class="stratos2"></i> **Температура:** Температурата се повишава с височината, поради абсорбцията на УВ
+              лъчи от озона.
+            </p>
+            <p>
+              <i class="stratos3"></i> **Метеорологични балони:** Височинни метеорологични балони често достигат
+              стратосферата.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="layer-item">
+        <h4 class="layer-header">Мезосфера (click me) <span class="toggle-icon fas fa-chevron-down"></span></h4>
+        <div class="layer-content">
+          <p>Слой между 50 и 85 км височина. Температурите намаляват значително с нарастване на височината.</p>
+          <div class="details hidden">
+            <p>
+              <i class="meteor1"></i> **Метеори:** Повечето метеори (падащи звезди) изгарят в мезосферата поради
+              триенето с атмосферните газове.
+            </p>
+            <p>
+              <i class="meteor2"></i> **Най-студено място:** Това е най-студеният слой на атмосферата, където
+              температурите могат да паднат до -90°C.
+            </p>
+            <p>
+              <i class="meteor3"></i> **Нощни светещи облаци:** В мезосферата могат да се наблюдават редки, светещи през
+              нощта облаци (Noctilucent clouds).
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="layer-item">
+        <h4 class="layer-header">Термосфера (click me) <span class="toggle-icon fas fa-chevron-down"></span></h4>
+        <div class="layer-content">
+          <p>Простира се от около 85 км до 600 км. Температурите могат да достигнат много високи стойности поради
+            абсорбцията на слънчева радиация.</p>
+          <div class="details hidden">
+            <p>
+              <i class="termo1"></i> **Радиовълни:** Йоносферата, част от термосферата, отразява радиовълни, което
+              позволява дълги разстояния на радиокомуникация.
+            </p>
+            <p>
+              <i class="termo2"></i> **Високи температури, ниска топлина:** Въпреки високите температури (до 2000°C),
+              въздухът е толкова разреден, че не бихте усетили топлина.
+            </p>
+            <p>
+              <i class="termo3"></i> **Аврора:** Северното и Южното сияние (Аврора Бореалис и Аврора Аустралис) се
+              случват в термосферата.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="layer-item">
+        <h4 class="layer-header">Екзосфера (click me) <span class="toggle-icon fas fa-chevron-down"></span></h4>
+        <div class="layer-content">
+          <p>Най-външният слой на атмосферата, където атмосферата постепенно преминава в космическото пространство.</p>
+          <div class="details hidden">
+            <p>
+              <i class="satellite1"></i> **Сателити:** Много изкуствени спътници обикалят Земята в екзосферата.
+            </p>
+            <p>
+              <i class="satellite2"></i> **Граница с Космоса:** Няма ясно определена горна граница на екзосферата; тя
+              плавно се слива с междупланетното пространство.
+            </p>
+            <p>
+              <i class="satellite3"></i> **Много малко частици:** Молекулите са толкова раздалечени, че почти няма
+              сблъсъци между тях.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="atmospheric-gases">
+      <h3>ГАЗОВЕ В АТМОСФЕРАТА</h3>
+      <p>Атмосферата представлява смес от газове. Основните компоненти са азот (около 78%) и кислород (около 21%).
+        Останалата част се състои от аргон, въглероден диоксид, неонов и хелий, както и следи от други газове и водни
+        пари.</p>
+      <div class="gas-info">
+        <h4>Жизненоважен кислород</h4>
+        <p>Кислородът е жизненоважен за дишането на повечето живи организми. Растенията произвеждат кислород чрез
+          фотосинтеза.</p>
+      </div>
+    </section>
+
+    <section id="phenomena">
+      <h3>ОГЪН В НЕБЕТО</h3>
+      <p>Метеорите, известни като "падащи звезди", изгарят при навлизане в атмосферата на Земята поради триенето с
+        въздуха. Това създава светлинно шоу, което може да се наблюдава от Земята.</p>
+      <div class="phenomena-img">
+        <img src="https://assets.iflscience.com/assets/articleNo/75718/aImg/78472/burn-baby-burn-meta.jpg"
+          alt="Метеор в атмосферата">
+        <p class="image-caption">Метеор, изгарящ в земната атмосфера.</p>
+      </div>
+    </section>
+
+    <section id="climate-cover">
+      <h3>ПОКРИВЪТ НА КЛИМАТА</h3>
+      <p>Климатът на Земята се формира от взаимодействието между атмосферата, океаните, сушата, ледовете и живите
+        организми. Атмосферата действа като топлоизолиращо покритие, което задържа топлината и предпазва планетата от
+        екстремни температурни промени. Парниковият ефект, предизвикан от газове като въглероден диоксид, е естествен
+        процес, който поддържа Земята достатъчно топла за живот.</p>
+      <div class="climate-img">
+        <img src="https://images.hdqwalls.com/download/sky-clouds-sun-4k-au-1280x720.jpg" alt="Облаци и климат">
+        <p class="image-caption">Облаци, играещи важна роля в климата.</p>
+      </div>
+    </section>
+
+    <section id="sources">
+      <h3>Източници</h3>
+      <ul>
+        <li>Страница 124/раздел Климат/подраздел Атмосфера/ от Енциклопедия по география (повече информация в раздел <a
+            href="file:///C:/Users/GRIGS/Desktop/Manev/8B-24-25-BMZ/AManev/soursec.html">Източници</a>)</li>
+        <li>Изображенията са илюстративни и заснети от различни източници, показващи атмосферата и свързани феномени.
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>Имейл: <a href="mailto:klimatsofiaTUES@gmail.com">klimatsofiaTUES@gmail.com</a></p>
+      <p>Телефон: +359 2 921 21 00</p>
+      <p>&copy; 2025 Всички права запазени</p>
+      <div class="social-links">
+        <a href="https://www.facebook.com/profile.php?id=61573819538073" target="_blank">Facebook</a> | <a
+          href="https://x.com/thebravoman/status/1321863967837425664" target="_blank">Twitter</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+    document.addEventListener('DOMContentLoaded', function () {
+      const layerHeaders = document.querySelectorAll('.layer-header');
+      layerHeaders.forEach(header => {
+        header.style.cursor = 'pointer';
+        header.addEventListener('click', function () {
+          const layerContent = this.nextElementSibling;
+          const toggleIcon = this.querySelector('.toggle-icon');
+          const detailsElement = layerContent.querySelector('.details');
+          detailsElement.classList.toggle('hidden');
+          if (detailsElement.classList.contains('hidden')) {
+            toggleIcon.classList.remove('fa-chevron-up');
+            toggleIcon.classList.add('fa-chevron-down');
+          } else {
+            toggleIcon.classList.remove('fa-chevron-down');
+            toggleIcon.classList.add('fa-chevron-up');
+          }
+        });
+      });
+    });
+  </script>
 </body>
+
 </html>
