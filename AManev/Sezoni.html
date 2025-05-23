@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="bg">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,16 +8,17 @@
     <link rel="stylesheet" href="sezoni.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap">
 </head>
+
 <body>
-    <header> 
-        <button class="obraten" onclick="goBack()"><a href="#">Обратно</a></button> 
-        <h1><a href="file:///C:/Users/GRIGS/Desktop/Manev/8B-24-25-BMZ/AManev/%D0%9F%D0%BE%D0%B4%D1%80%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%D0%B8.html">Климат</a></h1>
-        
+    <header>
+        <button class="obraten" onclick="goBack()"><a href="#">Обратно</a></button>
+        <h1><a href="Подраздели.html">Климат</a></h1>
+
         <nav>
             <ul>
                 <li><a href="#">За нас</a></li>
-                <li><a href="#sources">Източници</a></li>
-                <li><a href="#">Контакти</a></li>
+                <li><a href="soursec.html">Източници</a></li>
+                <li><a href="../Petar/kontakt.html">Контакти</a></li>
             </ul>
         </nav>
     </header>
@@ -24,63 +26,94 @@
     <main>
         <section id="seasons-intro">
             <h2>Сезони</h2>
-            <p>Земята се движи около Слънцето по елиптична орбита и е наклонена на около 23.5 градуса спрямо равнината на орбитата си. Този наклон е основната причина за смяната на сезоните. В рамките на една година части от Земята са по-близо или по-далеч от Слънцето и ще получават по-малко или по-голямо енергия, което води до пролет, лято, есен и зима.</p>
+            <p>Земята се движи около Слънцето по елиптична орбита и е наклонена на около 23.5 градуса спрямо равнината
+                на орбитата си. Този наклон е основната причина за смяната на сезоните. В рамките на една година части
+                от Земята са по-близо или по-далеч от Слънцето и ще получават по-малко или по-голямо енергия, което води
+                до пролет, лято, есен и зима.</p>
+        </section>
+
+        <section id="season-info-tool">
+            <h3>Открий информация за сезона!</h3>
+            <p>Въведи името на сезон (напр. "пролет", "лято", "есен", "зима") и научи нещо интересно:</p>
+            <input type="text" id="seasonInput" placeholder="Въведи сезон...">
+            <button onclick="displaySeasonInfo()">Покажи информация</button>
+            <div id="season-output"></div>
         </section>
 
         <section id="earth-orbit">
             <h3>Орбита на Земята</h3>
-            <p>Земята се движи около Слънцето по орбита, която не е идеално кръгова, а е елиптична. Наклонът на земната ос е постоянен през цялата година и е причина за различния ъгъл, под който слънчевите лъчи падат върху повърхността на Земята в различните моменти от годината. Една пълна обиколка около Слънцето отнема приблизително 365 дни, което определя продължителността на една година.</p>
+            <p>Земята се движи около Слънцето по орбита, която не е идеално кръгова, а е елиптична. Наклонът на земната
+                ос е постоянен през цялата година и е причина за различния ъгъл, под който слънчевите лъчи падат върху
+                повърхността на Земята в различните моменти от годината. Една пълна обиколка около Слънцето отнема
+                приблизително 365 дни, което определя продължителността на една година.</p>
             <div class="image-container">
-                <img src="https://static.vecteezy.com/system/resources/previews/002/391/196/large_2x/movement-of-the-earth-and-sun-vector.jpg" alt="Земята обикаля Слънцето" class="illustration-img">
-                <p class="image-caption">Земята се движи по елиптична орбита около Слънцето, като оста ѝ е наклонена.</p>
+                <img src="https://static.vecteezy.com/system/resources/previews/002/391/196/large_2x/movement-of-the-earth-and-sun-vector.jpg"
+                    alt="Земята обикаля Слънцето" class="illustration-img">
+                <p class="image-caption">Земята се движи по елиптична орбита около Слънцето, като оста ѝ е наклонена.
+                </p>
             </div>
         </section>
 
         <section id="through-the-year">
             <h3>През Годината</h3>
-            <p>В различните сезони растителността и животинският свят се адаптират към променящите се условия. Пролетта носи ново начало, лятото е период на топлина и растеж, есента е време за прибиране на реколтата и падащи листа, а зимата е студена и спокойна.</p>
+            <p>В различните сезони растителността и животинският свят се адаптират към променящите се условия. Пролетта
+                носи ново начало, лятото е период на топлина и растеж, есента е време за прибиране на реколтата и падащи
+                листа, а зимата е студена и спокойна.</p>
             <div class="image-gallery">
-                <img src="http://4.bp.blogspot.com/--WZ3ScDN8fU/UYJvP7KcMvI/AAAAAAAAT4s/Qgei1uCFsZo/s1920/flowering-trees-in-spring-1200.jpg" alt="Дърво през пролетта" class="gallery-img">
-                <img src="https://greatplainsnursery.com/wp-content/uploads/2016/12/oak-tree-pic.jpg" alt="Дърво през лятото" class="gallery-img">
-                <img src="https://hdqwalls.com/wallpapers/tree-autumn-field.jpg" alt="Дърво през есента" class="gallery-img">
-                <img src="https://fullcircletreeandshrub.com/wp-content/uploads/2015/12/tumblr_static_winter_tree_by_epickittyness-d3dpj76.jpg" alt="Дърво през зимата" class="gallery-img">
+                <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/apple-tree-in-full-bloom-in-spring-in-germany-matthias-hauser.jpg    "
+                    alt="Дърво през пролетта" class="gallery-img">
+                <img src="https://www.arborwell.com/wp-content/uploads/2019/06/Maple-Tree.jpg" alt="Дърво през лятото"
+                    class="gallery-img">
+                <img src="https://hdqwalls.com/wallpapers/tree-autumn-field.jpg" alt="Дърво през есента"
+                    class="gallery-img">
+                <img src="https://fullcircletreeandshrub.com/wp-content/uploads/2015/12/tumblr_static_winter_tree_by_epickittyness-d3dpj76.jpg"
+                    alt="Дърво през зимата" class="gallery-img">
                 <p class="image-caption">Дърво през четирите сезона.</p>
             </div>
         </section>
 
-        <section id="solstice-equinox">
+        <section id="sunrise">
             <h3>Слънцестоене и Равноденствие</h3>
-            <p>Слънцестоенията (лятно и зимно) са моментите, когато Слънцето достига най-високата или най-ниската си точка в небето, което води до най-дългия или най-късия ден. Равноденствията (пролетно и есенно) са моментите, когато денят и нощта са с почти равна продължителност по целия свят.</p>
+            <p>Слънцестоенията (лятно и зимно) са моментите, когато Слънцето достига най-високата или най-ниската си
+                точка в небето, което води до най-дългия или най-късия ден. Равноденствията (пролетно и есенно) са
+                моментите, когато денят и нощта са с почти равна продължителност по целия свят.</p>
             <div class="image-container">
-                <img src="https://mf.b37mrtl.ru/inotv/s/content/0/l/u/c/1801640_1_AP20133310228509_cr_big.jpg" alt="Изгрев над Стоунхендж" class="illustration-img">
+                <img src="https://mf.b37mrtl.ru/inotv/s/content/0/l/u/c/1801640_1_AP20133310228509_cr_big.jpg"
+                    alt="Изгрев над Стоунхендж" class="illustration-img">
                 <p class="image-caption">Изгрев на слънцестоенето над Стоунхендж.</p>
             </div>
             <div class="image-container">
-                <img src="https://c.pxhere.com/photos/45/2b/sun_sunset_abendstimmung_sea_sky_clouds_afterglow_romantic-572667.jpg!d" alt="Залез над океана" class="illustration-img">
+                <img src="https://c.pxhere.com/photos/45/2b/sun_sunset_abendstimmung_sea_sky_clouds_afterglow_romantic-572667.jpg!d"
+                    alt="Залез над океана" class="illustration-img">
                 <p class="image-caption">Красив залез над океана.</p>
             </div>
         </section>
 
         <section id="floods-droughts">
             <h3>Потопи и Суши</h3>
-            <p>Климатичните промени, които са част от сезонните вариации, могат да доведат до екстремни метеорологични явления като наводнения и засушавания. Потопите се случват, когато има прекомерни валежи, докато сушите са резултат от продължителни периоди без дъжд.</p>
+            <p>Климатичните промени, които са част от сезонните вариации, могат да доведат до екстремни метеорологични
+                явления като наводнения и засушавания. Потопите се случват, когато има прекомерни валежи, докато сушите
+                са резултат от продължителни периоди без дъжд.</p>
             <div class="image-gallery">
-                <img src="https://cdn.pixabay.com/photo/2022/09/25/22/45/canada-geese-7479335_1280.jpg" alt="Мигриращи гъски" class="gallery-img">
-                <img src="http://i.imgur.com/Hx8QMdX.jpg" alt="Горски пожар" class="gallery-img">
-                <p class="image-caption">Примери за природни явления, свързани с климатичните промени.</p>
+                <img src="https://cdn.pixabay.com/photo/2022/09/25/22/45/canada-geese-7479335_1280.jpg"
+                    alt="Мигриращи гъски" class="gallery-img">
+                <img src="https://www.fresnobee.com/latest-news/oewnev/picture253495194/alternates/LANDSCAPE_1140/CaliforniaWildfires.JPG"
+                    alt="Горски пожар" class="gallery-img">
             </div>
         </section>
 
         <section id="climate-zones">
             <h3>Климатични зони</h3>
-            <p>Различните климатични зони на Земята имат свои уникални сезонни промени, зависещи от географската ширина и други фактори. В екваториалните региони сезоните са по-малко изразени, докато в умерените и полярните зони са много по-отличителни.</p>
+            <p>Различните климатични зони на Земята имат свои уникални сезонни промени, зависещи от географската ширина
+                и други фактори. В екваториалните региони сезоните са по-малко изразени, докато в умерените и полярните
+                зони са много по-отличителни.</p>
         </section>
-
         <section id="sources">
             <h3>Източници</h3>
             <ul>
                 <li>Информацията е базирана на научни материали за сезоните и климата.</li>
-                <li>Изображенията са илюстративни и заснети от различни източници, показващи феномени, свързани със сезоните.</li>
+                <li>Изображенията са илюстративни и заснети от различни източници, показващи феномени, свързани със
+                    сезоните.</li>
             </ul>
         </section>
     </main>
@@ -88,13 +121,41 @@
         <div class="footer-content">
             <p>Имейл: <a href="klimatsofiaTUES@gmail.com">klimatsofiaTUES@gmail.com</a></p>
             <p>Телефон: +359 2 921 21 00 </p>
-            <p>&copy; 2025 Всички права запазени</p>
+            <p>© 2025 Всички права запазени</p>
             <div class="social-links">
-                <a href="https://www.facebook.com/profile.php?id=61573819538073" target="_blank">Facebook</a> | <a href="https://x.com/thebravoman/status/1321863967837425664" target="_blank">Twitter</a>
+                <a href="https://www.facebook.com/profile.php?id=61573819538073" target="_blank">Facebook</a> | <a
+                    href="https://x.com/thebravoman/status/1321863967837425664" target="_blank">Twitter</a>
             </div>
         </div>
     </footer>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+        function displaySeasonInfo() {
+            const seasonInput = document.getElementById('seasonInput').value.toLowerCase().trim();
+            const seasonOutput = document.getElementById('season-output');
+            let message = '';
 
-    <script src="atmos.js"></script>
+            switch (seasonInput) {
+                case 'пролет':
+                    message = 'Пролетта е време на обновление и цъфтеж. Дните стават по-дълги и природата оживява!';
+                    break;
+                case 'лято':
+                    message = 'Лятото е най-топлият сезон, идеален за почивки и дейности на открито. Насладете се на слънцето!';
+                    break;
+                case 'есен':
+                    message = 'Есента е сезонът на богатите цветове и обилната реколта. Листата падат, подготвяйки се за зимата.';
+                    break;
+                case 'зима':
+                    message = 'Зимата носи сняг и по-ниски температури. Време е за уют пред камината и зимни спортове!';
+                    break;
+                default:
+                    message = 'Моля, въведете валидно име на сезон: "пролет", "лято", "есен" или "зима".';
+            }
+            seasonOutput.textContent = message;
+        }
+    </script>
 </body>
+
 </html>
