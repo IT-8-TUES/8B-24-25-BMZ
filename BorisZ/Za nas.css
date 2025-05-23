@@ -106,7 +106,7 @@ p {
 }
 
 .about-hero {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('map-background.jpg') no-repeat center center/cover;
+    background:#555;
     color: #fff;
     padding: 5rem 1.25rem;
     border-radius: 0.5rem;
@@ -135,7 +135,7 @@ p {
     margin-top: 2.5rem;
 }
 
-.member-card {
+.card {
     background: #f9f9f9;
     padding: 1.5625rem;
     border-radius: 0.625rem;
@@ -145,12 +145,7 @@ p {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.member-card:hover {
-    transform: translateY(-0.3125rem);
-    box-shadow: 0 0.375rem 0.9375rem rgba(0,0,0,0.2);
-}
-
-.member-card img {
+.card img {
     width: 9.375rem;
     height: 9.375rem;
     border-radius: 50%;
@@ -159,19 +154,19 @@ p {
     border: 0.1875rem solid #3498db;
 }
 
-.member-card h3 {
+.card h3 {
     color: #2c3e50;
     font-size: 1.5em;
     margin-bottom: 0.625rem;
 }
 
-.member-card p {
+.card p {
     font-size: 0.95em;
     color: #555;
     margin-bottom: 0.5em;
 }
 
-.member-card p:last-of-type {
+.card p:last-of-type {
     margin-bottom: 0;
 }
 
