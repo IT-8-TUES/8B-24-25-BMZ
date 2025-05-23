@@ -14,11 +14,11 @@ html {
 body {
     font-family: "Inter", sans-serif;
     margin: 0;
-        background-image: url("https://cdn.wallpapersafari.com/43/43/lr9HLZ.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+    background-image: url("https://cdn.wallpapersafari.com/43/43/lr9HLZ.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     color: #ffffff;
     font-size: 1.8rem;
     display: flex;
@@ -59,7 +59,7 @@ header {
     background-color: #ded16cc1;
     padding: 1.5rem;
     display: flex;
-    align-items: center;  
+    align-items: center;
     justify-content: space-between;
     width: 100%;
     box-sizing: border-box;
@@ -68,12 +68,12 @@ header {
 }
 
 header h1 {
-  margin: 0;
-  font-size: 1.5em;
-  align-items: flex-start;
-  position: absolute;
-  transform: translateX(-50%);
-  left: 50%;
+    margin: 0;
+    font-size: 1.5em;
+    align-items: flex-start;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
 }
 
 nav ul {
@@ -121,7 +121,9 @@ section {
     border-radius: 1rem;
 }
 
-h2,h3,h4 {
+h2,
+h3,
+h4 {
     color: #d9e588;
     margin-bottom: 1.5rem;
     text-align: center;
@@ -191,6 +193,7 @@ h2,h3,h4 {
     margin-top: 1rem;
     line-height: 1.5;
 }
+
 footer {
     background-color: #bfb869;
     color: #e0f2f7;
@@ -227,91 +230,4 @@ footer {
 .social-links a {
     margin: 0 1rem;
     color: #e0f2f7;
-}
-
-/* Responsive adjustments */
-@media (max-width: 992px) {
-    .climate-grid {
-        grid-template-columns: 1fr;
-        gap: 2.5rem;
-    }
-}
-
-@media (max-width: 768px) {
-    body {
-        font-size: 1.6rem;
-    }
-    main {
-        width: 95%;
-        padding: 2rem 0;
-    }
-
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 1.5rem;
-    }
-
-    header h1 {
-        position: static;
-        transform: none;
-        margin-top: 1rem;
-        text-align: center;
-        width: 100%;
-        font-size: 2rem;
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        margin-top: 1.5rem;
-    }
-
-    nav ul li {
-        margin: 0.8rem 0;
-    }
-
-    .obraten {
-        width: fit-content;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 1.4rem;
-        padding: 0.8rem 1.5rem;
-    }
-
-    section {
-        padding: 2rem;
-    }
-
-    .location-image {
-        height: 180px;
-    }
-}
-
-@media (max-width: 480px) {
-    body {
-        font-size: 1.4rem;
-    }
-
-    header h1 {
-        font-size: 1.8rem;
-    }
-
-    section h2 {
-        font-size: 2rem;
-    }
-
-    .climate-location h3 {
-        font-size: 1.8rem;
-    }
-
-    .location-details p,
-    .image-caption {
-        font-size: 1.4rem;
-    }
-
-    .location-image {
-        height: 150px;
-    }
 }

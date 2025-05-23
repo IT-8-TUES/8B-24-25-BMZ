@@ -1,221 +1,217 @@
 body {
-  font-family: "Inter", sans-serif;
-  margin: 0;
-  background-image: url("images/landscape_of_mountain_green_hills_under_cloudy_blue_sky_4k_hd_nature.jpg"); /* Запазвам оригиналното фоново изображение */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 0;
-  box-sizing: border-box;
-  color: #e0f2f7; /* Много светъл синьо-зелен цвят за основен текст, за да контрастира с тъмните фонове */
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    background-image: url("images/landscape_of_mountain_green_hills_under_cloudy_blue_sky_4k_hd_nature.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+    box-sizing: border-box;
+    color: #e0f2f7;
 }
 
 .obraten {
-  background-color: #388e3c; /* Средно тъмно зелено, като по-тъмните дървета */
-  color: #ffffff; /* Бял текст за контраст */
-  border: none;
-  padding: 0.8em 1.5em;
-  cursor: pointer;
-  border-radius: 0.4rem;
-  font-size: 1em;
-  z-index: 10;
+    background-color: #388e3c;
+    color: #ffffff;
+    border: none;
+    padding: 0.8em 1.5em;
+    cursor: pointer;
+    border-radius: 0.4rem;
+    font-size: 1em;
+    z-index: 10;
 }
 
 html {
-  box-sizing: border-box;
-  font-size: 52.5%; /* Запазвам този размер, както е зададен */
+    box-sizing: border-box;
+    font-size: 52.5%;
 }
 
 header {
-  background-color: #004d40; /* Много тъмно тюркоазено-зелено, като дълбоките води на езерото */
-  padding: 1em;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  box-sizing: border-box;
-  font-size: 2em;
-  position: sticky;
-  opacity: 0.9;
-  color: #b2dfdb;
+    background-color: #004d40;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 2em;
+    position: sticky;
+    opacity: 0.9;
+    color: #b2dfdb;
 }
 
 .menu-icon {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 1.875em;
-  height: 1.25em;
-  margin-right: 1.25em;
-  cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1.875em;
+    height: 1.25em;
+    margin-right: 1.25em;
+    cursor: pointer;
 }
 
 header h1 {
-  margin: 0;
-  font-size: 1.5em;
-  align-items: flex-start;
-  position: absolute;
-  transform: translateX(-50%);
-  left: 50%;
+    margin: 0;
+    font-size: 1.5em;
+    align-items: flex-start;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
 }
 
 nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
 }
 
 nav ul li {
-  margin-left: 1.25em;
-  position: relative;
+    margin-left: 1.25em;
+    position: relative;
 }
 
 nav ul li a {
-  text-decoration: none;
-  color: inherit; /* Да наследява цвета на хедъра */
-  padding: 0.3125em 0.625em;
-  display: block;
+    text-decoration: none;
+    color: inherit;
+    padding: 0.3125em 0.625em;
+    display: block;
 }
 
 nav ul li a:hover {
-  background-color: #00796b; /* По-ярък тюркоазено-зелен при hover */
-  color: #ffffff;
+    background-color: #00796b;
+    color: #ffffff;
 }
 
 main {
-  flex-grow: 1;
-  width: 100%;
-  padding: 1.25em;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    flex-grow: 1;
+    width: 100%;
+    padding: 1.25em;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .temi {
-  padding: 1.6em;
-  display: flex;
-  text-align: center;
-  border: 0.4em solid #66bb6a; /* Ярко зелена граница, като свежа растителност */
-  background-color: rgba(
-    46, 125, 50, 0.9
-  ); /* Тъмно зелено с лека прозрачност, като гъста растителност */
-  border-radius: 1rem;
-  font-size: large;
-  color: #e0f2f7; /* Светъл синьо-зелен цвят за текст */
-  opacity: 0.8;
+    padding: 1.6em;
+    display: flex;
+    text-align: center;
+    border: 0.4em solid #66bb6a;
+    background-color: rgba(46, 125, 50, 0.9);
+    border-radius: 1rem;
+    font-size: large;
+    color: #e0f2f7;
+    opacity: 0.8;
 }
 
 .snimka {
-  display: grid;
-  width: 120rem;
-  grid-gap: 5rem;
-  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    display: grid;
+    width: 120rem;
+    grid-gap: 5rem;
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
 }
 
 .snimka .card {
-  display: flex;
-  flex-direction: column;
-  background-color: rgba(
-    0, 105, 92, 0.85
-  ); /* Тюркоазено-зелено с прозрачност, като водна повърхност */
-  cursor: auto;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border-radius: 1em;
-  opacity: 0.85;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 105, 92, 0.85);
+    cursor: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 1em;
+    opacity: 0.85;
 }
 
 .card.hovered {
-  transform: scale(1.05);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4); /* По-тъмна сянка */
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
 }
 
 .snimka .card__img {
-  width: 100%;
-  height: 18rem;
-  object-fit: fill;
-  opacity: 1;
-  border-radius: 1em;
-  filter: brightness(1) contrast(1) saturate(1) hue-rotate(0deg); /* Запазвам филтъра */
+    width: 100%;
+    height: 18rem;
+    object-fit: fill;
+    opacity: 1;
+    border-radius: 1em;
+    filter: brightness(1) contrast(1) saturate(1) hue-rotate(0deg);
 }
 
 .snimka .card__content {
-  display: grid;
-  grid-row-gap: 2rem;
-  padding: 2rem;
-  height: 100%;
-  align-self: center;
+    display: grid;
+    grid-row-gap: 2rem;
+    padding: 2rem;
+    height: 100%;
+    align-self: center;
 }
 
 .snimka .card__header {
-  font-size: 3rem;
-  font-weight: 500;
-  color: #fff9c4; /* Светло жълто, като слънчевите акценти по планините */
+    font-size: 3rem;
+    font-weight: 500;
+    color: #fff9c4;
 }
 
 .snimka .card__text {
-  font-size: 1rem;
-  letter-spacing: 0.1rem;
-  line-height: 1;
-  color: #e0f2f7; /* Светъл синьо-зелен цвят за текст */
-  margin-bottom: 2rem;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    line-height: 1;
+    color: #e0f2f7;
+    margin-bottom: 2rem;
 }
 
 a {
-  text-decoration: none;
-  color: #80cbc4; /* Светъл тюркоазен цвят за линкове */
+    text-decoration: none;
+    color: #80cbc4;
 }
 
 .snimka .card__btn {
-  display: block;
-  width: 100%;
-  padding: 1rem;
-  font-size: 2rem;
-  font-weight: bold;
-  background-color: #171818; /* Средно тюркоазено-зелено за бутона */
-  border-radius: 3rem;
-  transition: 0.3s;
-  cursor: auto;
-  font-style: bold;
-  text-align: center;
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: #171818;
+    border-radius: 3rem;
+    transition: 0.3s;
+    cursor: auto;
+    font-style: bold;
+    text-align: center;
 }
 
 footer {
-  background-color: #004d40; /* Същия тъмен тюркоазено-зелен цвят като хедъра */
-  color: #b2dfdb; /* Светъл тюркоазено-зелен цвят за текста във фуутъра */
-  font-size: 1.4em;
-  padding: 1em;
-  text-align: center;
-  width: 100%;
-  box-sizing: border-box;
-  opacity: 0.8;
+    background-color: #004d40;
+    color: #b2dfdb;
+    font-size: 1.4em;
+    padding: 1em;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    opacity: 0.8;
 }
 
 .footer-content {
-  max-width: 100%;
-  margin: 0 auto;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 .footer-content p {
-  margin-bottom: 0.5em;
+    margin-bottom: 0.5em;
 }
 
 .footer-content a {
-  color: #80cbc4; /* Светъл тюркоазен цвят за линковете във фуутъра */
-  text-decoration: none;
+    color: #80cbc4;
+    text-decoration: none;
 }
 
 .footer-content a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 .social-links {
-  margin-top: 0.5em;
+    margin-top: 0.5em;
 }

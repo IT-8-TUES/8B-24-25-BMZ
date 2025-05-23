@@ -1,404 +1,316 @@
 html {
-    box-sizing: border-box;
-    font-size: 62.5%;
+  box-sizing: border-box;
+  font-size: 62.5%;
 }
 
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
 body {
-    font-family: "Inter", sans-serif;
-    margin: 0;
-     background-image: url("https://wallpaperaccess.com/full/6268758.jpg"); 
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  background-image: url("https://wallpaperaccess.com/full/6268758.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-    color: #000000; 
-    font-size: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 0;
-    box-sizing: border-box;
+  color: #000000;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 a {
-    text-decoration: none;
-    color: #fcfcfc; /* Светло синьо за линкове */
-    transition: color 0.3s ease;
+  text-decoration: none;
+  color: #fcfcfc;
+  transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #020000;
+  color: #020000;
 }
 
 .obraten {
-    background-color: #6a8ba6; /* Средно синьо за бутона "Обратно" */
-    color: #ffffff;
-    border: none;
-    padding: 1rem 2rem;
-    cursor: pointer;
-    border-radius: 0.5rem;
-    font-size: 1.6rem;
-    z-index: 10;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #6a8ba6;
+  color: #ffffff;
+  border: none;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  z-index: 10;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .obraten:hover {
-    background-color: #4a6c7e; /* По-тъмно синьо при hover */
-    transform: translateY(-2px);
+  background-color: #4a6c7e;
 }
 
 header {
-    background-color: #3b5060; /* По-тъмно сиво-синьо за хедъра */
-    padding: 1.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    box-sizing: border-box;
-    position: static;
-    top: 0;
-    z-index: 100;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
-    opacity: 0.85;
+  background-color: #3b5060;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+  position: static;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+  opacity: 0.85;
 }
 
 header h1 {
-    margin: 0;
-    font-size: 2.2rem;
-    align-items: flex-start;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    color: #e0e0e0;
+  margin: 0;
+  font-size: 2.2rem;
+  align-items: flex-start;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #e0e0e0;
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
 }
 
 nav ul li {
-    margin-left: 2rem;
-    position: relative;
+  margin-left: 2rem;
+  position: relative;
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: #e0e0e0;
-    padding: 1rem 1.5rem;
-    display: block;
-    border-radius: 0.4rem;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    font-size: 1.6rem;
+  text-decoration: none;
+  color: #e0e0e0;
+  padding: 1rem 1.5rem;
+  display: block;
+  border-radius: 0.4rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-size: 1.6rem;
 }
 
 nav ul li a:hover {
-    background-color: #6a8ba6; /* Средно синьо при hover */
-    color: #ffffff;
+  background-color: #6a8ba6;
+  color: #ffffff;
 }
 
 main {
-    width: 90%;
-    max-width: 1000px;
-    padding: 3rem 0;
-    line-height: 1.7;
-    text-align: justify;
+  width: 90%;
+  max-width: 1000px;
+  padding: 3rem 0;
+  line-height: 1.7;
+  text-align: justify;
 }
 
 section {
-    margin-bottom: 4rem;
-    background-color: #5a7d95; /* Средно синьо за секциите */
-    padding: 3rem;
-    border-radius: 1rem;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    color: #e0e0e0;
-    opacity: 0.9;
+  margin-bottom: 4rem;
+  background-color: #5a7d95;
+  padding: 3rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  color: #e0e0e0;
+  opacity: 0.9;
 }
 
 h2,
 h3,
 h4 {
-    color: #dbe4eb; /* По-светъл цвят за заглавията */
-    margin-bottom: 1.5rem;
-    text-align: center;
-    font-weight: 700;
+  color: #dbe4eb;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: 700;
 }
 
 .image-container {
-    text-align: center;
-    margin: 2.5rem 0;
+  text-align: center;
+  margin: 2.5rem 0;
 }
 
 .illustration-img,
 .gallery-img {
-    max-width: 50%;
-    height: auto;
-    border-radius: 0.8rem;
-    margin-bottom: 1.5rem;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  max-width: 50%;
+  height: auto;
+  border-radius: 0.8rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .image-caption {
-    font-style: italic;
-    font-size: 1.4rem;
-    color: #aebcce; /* По-бледо синьо за надписи към изображения */
-    margin-top: 1rem;
+  font-style: italic;
+  font-size: 1.4rem;
+  color: #aebcce;
+  margin-top: 1rem;
 }
 
 .content-block {
-    display: flex;
-    align-items: center;
-    gap: 1.5em;
-    margin-bottom: 2em;
-    background-color: #7f99a9; /* По-светло синьо за блокове със съдържание */
-    padding: 1.5em;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    opacity: 1;
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
+  margin-bottom: 2em;
+  background-color: #7f99a9;
+  padding: 1.5em;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  opacity: 1;
 }
 
 .content-block .text-block {
-    flex: 1;
+  flex: 1;
 }
 
 .content-block .image-container {
-    flex: 0 0 40%;
-    margin: 0;
+  flex: 0 0 40%;
+  margin: 0;
 }
 
 .content-block.reverse {
-    flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
 
 #sources ul {
-    list-style: disc;
-    margin-left: 3rem;
+  list-style: disc;
+  margin-left: 3rem;
 }
 
 #sources li {
-    margin-bottom: 0.8rem;
-    font-size: 1.6rem;
-}
-
-footer {
-    background-color: #3b5060; 
-    color: #aebcce; 
-    font-size: 1.4rem;
-    padding: 1.5rem;
-    text-align: center;
-    width: 100%;
-opacity: 0.85;
-}
-
-.footer-content {
-    max-width: 100%;
-    margin: 0 auto;
-}
-
-.footer-content p {
-    margin-bottom: 0.8rem;
-}
-
-.footer-content a {
-    color: #aebcce;
-    text-decoration: none;
-}
-
-.footer-content a:hover {
-    text-decoration: underline;
-}
-
-.social-links {
-    margin-top: 1rem;
-}
-
-.social-links a {
-    margin: 0 1rem;
-    color: #aebcce;
+  margin-bottom: 0.8rem;
+  font-size: 1.6rem;
 }
 
 #ocean-distance-tool {
-    background-color: #dbe4eb; /* Много светъл цвят за инструмента */
-    padding: 3rem;
-    border-radius: 1rem;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-    text-align: center;
-    margin-bottom: 4rem;
-    color: #3b5060; /* Тъмен текст в инструмента */
-    border: 2px solid #6a8ba6; /* Средно синьо за рамката */
-    position: relative;
-    overflow: hidden;
+  background-color: #dbe4eb;
+  padding: 3rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  margin-bottom: 4rem;
+  color: #3b5060;
+  border: 2px solid #6a8ba6;
+  position: relative;
+  overflow: hidden;
 }
 
 #ocean-distance-tool::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 10px;
-    background: linear-gradient(to right, #6a8ba6, #b0c4de); /* Градиентна лента отгоре */
-    border-radius: 1rem 1rem 0 0;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background: linear-gradient(to right, #6a8ba6, #b0c4de);
+  border-radius: 1rem 1rem 0 0;
 }
 
 #ocean-distance-tool h3 {
-    color: #3b5060;
-    margin-top: 1rem;
-    font-size: 2.8rem;
+  color: #3b5060;
+  margin-top: 1rem;
+  font-size: 2.8rem;
 }
 
 #ocean-distance-tool p {
-    font-size: 1.8rem;
-    margin-bottom: 2rem;
-    color: #4a6c7e; /* По-тъмен текст в инструмента */
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: #4a6c7e;
 }
 
 #ocean-distance-tool input[type="text"] {
-    padding: 1.2rem;
-    border: 2px solid #6a8ba6;
-    border-radius: 0.8rem;
-    margin-right: 1.5rem;
-    width: 300px;
-    font-size: 1.8rem;
-    box-sizing: border-box;
-    outline: none;
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  padding: 1.2rem;
+  border: 2px solid #6a8ba6;
+  border-radius: 0.8rem;
+  margin-right: 1.5rem;
+  width: 300px;
+  font-size: 1.8rem;
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 #ocean-distance-tool input[type="text"]:focus {
-    border-color: #b0c4de;
-    box-shadow: 0 0 10px rgba(176, 196, 222, 0.5);
+  border-color: #b0c4de;
+  box-shadow: 0 0 10px rgba(176, 196, 222, 0.5);
 }
 
 #ocean-distance-tool button {
-    background-color: #b0c4de; /* Светло синьо за бутона на инструмента */
-    color: #3b5060;
-    padding: 1.2rem 2.5rem;
-    border: none;
-    border-radius: 0.8rem;
-    cursor: pointer;
-    font-size: 1.8rem;
-    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #b0c4de;
+  color: #3b5060;
+  padding: 1.2rem 2.5rem;
+  border: none;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  font-size: 1.8rem;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 #ocean-distance-tool button:hover {
-    background-color: #dbe4eb; /* По-светло синьо при hover */
-    transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  background-color: #dbe4eb;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 #ocean-distance-tool #ocean-output {
-    margin-top: 2.5rem;
-    font-size: 2.2rem;
-    font-weight: bold;
-    color: #3b5060;
-    background-color: #e6edf2; /* По-светъл фон за резултата */
-    padding: 1.5rem;
-    border-radius: 0.8rem;
-    border: 1px dashed #aebcce; /* Пунктирана рамка */
-    line-height: 1.5;
-    word-wrap: break-word;
+  margin-top: 2.5rem;
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #3b5060;
+  background-color: #e6edf2;
+  padding: 1.5rem;
+  border-radius: 0.8rem;
+  border: 1px dashed #aebcce;
+  line-height: 1.5;
+  word-wrap: break-word;
 }
 
-@media (max-width: 768px) {
-    body {
-        font-size: 1.6rem;
-    }
-    main {
-        width: 95%;
-        padding: 2rem 0;
-    }
-
-    .illustration-img, .gallery-img {
-        max-width: 90%;
-    }
-
-    .content-block {
-        flex-direction: column;
-    }
-
-    .content-block.reverse {
-        flex-direction: column;
-    }
-
-    .content-block .image-container {
-        flex: none;
-        width: 90%;
-        margin: 0 auto;
-    }
-
-    #ocean-distance-tool input[type="text"],
-    #ocean-distance-tool button {
-        width: 90%;
-        margin-right: 0;
-        margin-bottom: 1.5rem;
-    }
-    #ocean-distance-tool button {
-        margin-top: 0.5rem;
-    }
-    #ocean-distance-tool #ocean-output {
-        font-size: 1.8rem;
-        padding: 1rem;
-    }
+footer {
+  background-color: #3b5060;
+  color: #aebcce;
+  font-size: 1.4rem;
+  padding: 1.5rem;
+  text-align: center;
+  width: 100%;
+  opacity: 0.85;
 }
 
-@media (max-width: 480px) {
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 1.2rem;
-    }
+.footer-content {
+  max-width: 100%;
+  margin: 0 auto;
+}
 
-    header h1 {
-        position: static;
-        transform: none;
-        margin-top: 0.8rem;
-        text-align: center;
-        width: 100%;
-        font-size: 2rem;
-    }
+.footer-content p {
+  margin-bottom: 0.8rem;
+}
 
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        margin-top: 1.5rem;
-    }
+.footer-content a {
+  color: #aebcce;
+  text-decoration: none;
+}
 
-    nav ul li {
-        margin: 0.8rem 0;
-    }
+.footer-content a:hover {
+  text-decoration: underline;
+}
 
-    .obraten {
-        width: fit-content;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 1.4rem;
-        padding: 0.8rem 1.5rem;
-    }
+.social-links {
+  margin-top: 1rem;
+}
 
-    body {
-        font-size: 1.6rem;
-    }
-
-    section {
-        padding: 2rem;
-    }
+.social-links a {
+  margin: 0 1rem;
+  color: #aebcce;
 }

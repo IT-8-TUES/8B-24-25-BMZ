@@ -6,7 +6,7 @@ function goBack() {
 async function getOceanDistance() {
     const countryInput = document.getElementById('countryInput').value.toLowerCase().trim();
     const oceanOutput = document.getElementById('ocean-output');
-    oceanOutput.innerHTML = 'Зареждане...'; 
+    oceanOutput.innerHTML = 'Зареждане...';
     const simulatedOceanData = {
         'българия': { ocean: 'Черно море (Атлантически океан)', distance: '0 км', info: 'България има излаз на Черно море.' },
         'германия': { ocean: 'Северно море и Балтийско море (Атлантически океан)', distance: '0 км', info: 'Германия има излаз на Северно и Балтийско море.' },
@@ -92,7 +92,7 @@ async function getOceanDistance() {
         'кипър': { ocean: 'Средиземно море (Атлантически океан)', distance: '0 км', info: 'Кипър е островна държава в Средиземно море.' },
         'малтийска република': { ocean: 'Средиземно море (Атлантически океан)', distance: '0 км', info: 'Малта е островна държава в Средиземно море.' },
     };
-   
+
     if (simulatedOceanData[countryInput]) {
         const data = simulatedOceanData[countryInput];
         message = `За ${countryInput.charAt(0).toUpperCase() + countryInput.slice(1)}: <br>`;
